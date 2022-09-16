@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./styles/main.css" rel="stylesheet"> 
+</head>
+<body>
+
+<h2>Vertical Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="wrapper-container">
+  <div class="tab">
+    <button class="tablinks " onclick="openContent(event, 'content1')" id="defaultOpen" aria-controls="t1">Organizational Focus</button>
+    <button class="tablinks" onclick="openContent(event, 'content2')"aria-controls="t2"><span>Competencies & Essentials Of High Performing Organizations (Sampling)</span></button>
+    <button class="tablinks" onclick="openContent(event, 'content3')"aria-controls="t3">Diagnostic and Assessment Tools - Gap Analysis (Sampling)</button>
+    <button class="tablinks" onclick="openContent(event, 'content4')"aria-controls="t4">Potential Resources (Sampling)</button>
+
+  </div>
+    <div id="content1" class="tabcontent" aria-labelledby="t1-label" tabindex="-1" aria-expanded="false">
+      <div class="viewContent">
+        <div class="occupational">
+          <h4>OCCUPATIONAL</h4>
+          <p>This level focuses on job specific, and discipline specific competencies and positions. </p>
+        </div>
+        <div class="group">
+          <h4>GROUP</h4>
+          <p>The young woman is facing away with a profile of the left side of her face. Her chin is actually the nose of the older women.  Her ear is the eye of the older women.  Her curly hair is visible above her ear and she is wearing a black hat with two long curled feathers. </p>
+        </div>
+        <div class="leadership">
+          <h4>LEADERSHIP</h4>
+          <p>The young woman is facing away with a profile of the left side of her face. Her chin is actually the nose of the older women.  Her ear is the eye of the older women.  Her curly hair is visible above her ear and she is wearing a black hat with two long curled feathers. </p>
+        </div>
+        <div class="process">
+          <h4>PROCESS</h4>
+          <p>The young woman is facing away with a profile of the left side of her face. Her chin is actually the nose of the older women.  Her ear is the eye of the older women.  Her curly hair is visible above her ear and she is wearing a black hat with two long curled feathers. </p>
+        </div>
+        <div class="organization">
+          <h4>ORGANIZATION</h4>
+          <p>The young woman is facing away with a profile of the left side of her face. Her chin is actually the nose of the older women.  Her ear is the eye of the older women.  Her curly hair is visible above her ear and she is wearing a black hat with two long curled feathers. </p>
+        </div>
+      </div>
+    </div>
+  
+
+  <div id="content2" class="tabcontent" aria-labelledby="t2-label" tabindex="-1" aria-expanded="false">
+    <h4>Old Woman</h4>
+    <p>The old woman is looking downward and you see the side of her face. She has a large nose, long curved chin, and straight mouth line.  Her eye is the ear of the younger women. </p> 
+  </div>
+
+  <div id="content3" class="tabcontent" aria-labelledby="t3-label" tabindex="-1" aria-expanded="false">
+    <h4>Eagle</h4>
+    <p>The eagle's head is the white shape in the top right portion of the image, you can see the outline of the beak and eye. The eagles' wings are visible wrapping around each side of the women (in the lower half of the image). </p>
+  </div>
+
+  <div id="content4" class="tabcontent" aria-labelledby="t4-label" tabindex="-1" aria-expanded="false">
+      <h4>Beaver</h4>
+      <img src="images/Beaver.png" alt="" height="250" width="250">
+      <p>The beaver is the upper left side of the eagle's wing.  You can see the contour of the beaver's head tucked under the old women's nose and above her chin.</p>
+    </div>
+</div>
+
+<script src="./src/index.js"></script>
+   
+</body>
+</html> 
