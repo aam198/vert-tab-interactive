@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Roboto+Slab:wght@300;700&display=swap');
 
 * {box-sizing: border-box}
 body {
@@ -21,9 +21,6 @@ body {
   --width: calc(100% /5);
 }
 
-h4{
-  font-family: 'Roboto Slab', serif;
-}
 
 .wrapper-container{
   height: auto;
@@ -70,6 +67,7 @@ span[class~="sr-only"] {
   cursor: pointer;
   transition: 0.3s;
   font-size: 16px;
+  position: relative;
 }
 
 /* Change background color of buttons on hover */
@@ -82,7 +80,21 @@ span[class~="sr-only"] {
 .tab button.active {
   background-color: #3a5c89;
   color: #ede1cd;
+  font-weight: bold;
 }
+
+.tab button.active::after{
+	position: absolute;
+  content: '';
+  border: 10px solid transparent;
+  border-top: 10px solid var(--base-color);
+  top: 100%;
+  right: 50%;
+  z-index: 1000;
+}
+
+/* TODO: Make sure arrow does not appear at last div */
+
 
 /* Style the tab content */
 .tabcontent { 
@@ -107,7 +119,8 @@ span[class~="sr-only"] {
 
 .viewContent > div {
   width: var(--width);
-  border: 1px solid red;
+  border: 1px solid #c0c3c7;
+  margin-left:2px;
 }
 
 
@@ -117,6 +130,13 @@ span[class~="sr-only"] {
   justify-content: center;
   text-align: center;
   width: 100%;
+  margin: 0;
+  height: 7.2vh;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 0.5px
 }
 
 .viewContent > div >  p {
@@ -124,11 +144,39 @@ span[class~="sr-only"] {
 }
 
 .occupational h4{
+  background-color: var(--primary-yellow);
+}
+
+.group h4{
   background-color: var(--primary-blue);
-  margin: 0;
-  padding: 0;
-  height: 7vh;
+}
+
+.leadership h4{
+  background-color: var(--primary-red);
+}
+
+.process h4{
+  background-color: var(--primary-green);
+}
+
+.organization h4{
+  background-color: var(--primary-purple);
 }
 
 
 
+/* Media Query */
+/* https://web.dev/one-line-layouts/ */
+/* 
+.tabcontent > .viewContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  /* justify-content: center; 
+}
+
+.viewContent > div {
+  flex: 0 1 200px;
+  width: var(--width);
+  border: 1px solid red;
+} */
