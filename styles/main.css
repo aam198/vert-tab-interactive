@@ -8,7 +8,7 @@ body {
 /* Reference for build https://github.com/aam198/3_col_card/blob/master/styles/main.css */
 
 :root{
-  --base-color: #3a5c89;
+  --base-color: #334d66;
   --primary-blue: #7aa4c4;
   --primary-yellow: #fad18e;
   --primary-red: #973b5c;
@@ -16,6 +16,7 @@ body {
   --primary-purple: #5F506B;
   --dark-accent: #10263e;
   --light-accent: #f1e7d6;
+  --white: #ffffff;
 
   --light-bg: #f0f4f9;
   --width: calc(100% /5);
@@ -23,6 +24,7 @@ body {
 
 
 .wrapper-container{
+  background-color: var(--light-bg);
   height: auto;
   width: 100%;
   display: flex;
@@ -72,14 +74,14 @@ span[class~="sr-only"] {
 
 /* Change background color of buttons on hover */
 .tab button:hover, .tab button:focus {
-  background-color: #3a5c89;
-  color: #ede1cd;
+  background-color: var(--base-color);
+  color: var(--white);
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #3a5c89;
-  color: #ede1cd;
+  background-color: var(--base-color);
+  color: var(--white);
   font-weight: bold;
 }
 
@@ -98,7 +100,7 @@ span[class~="sr-only"] {
 
 /* Style the tab content */
 .tabcontent { 
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   width: 85%;
   border-left: none;
   height: auto;
@@ -118,9 +120,12 @@ span[class~="sr-only"] {
 }
 
 .viewContent > div {
-  width: var(--width);
+  /* width: var(--width); */
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
   border: 1px solid #c0c3c7;
   margin-left:2px;
+  height: auto;
+  background-color: var(--white);
 }
 
 
@@ -130,8 +135,10 @@ span[class~="sr-only"] {
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin: 0;
-  height: 7.2vh;
+  margin: 0px;
+  /* min-height: 6vh;
+  max-height: 7.2vh; */
+  padding: 15px 10px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 10px;
   font-weight: bold;
