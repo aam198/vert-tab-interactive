@@ -11,9 +11,9 @@ body {
   --base-color: #334d66;
   --primary-blue: #7aa4c4;
   --primary-yellow: #fad18e;
-  --primary-red: #973b5c;
+  --primary-red: #e08b7d;
   --primary-green: #659B5E;
-  --primary-purple: #5F506B;
+  --primary-purple: #A879C3;
   --dark-accent: #10263e;
   --light-accent: #f1e7d6;
   --white: #ffffff;
@@ -29,6 +29,7 @@ body {
   width: 100%;
   display: flex;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+  /* https://codepen.io/aam198/pen/bGRYwjJ */
 }
 
 span[class~="sr-only"] {
@@ -124,7 +125,7 @@ span[class~="sr-only"] {
 .viewContent > div {
   /* width: var(--width); */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
-  border: 1px solid #c0c3c7;
+  /* border: 1px solid #c0c3c7; */
   margin-left:2px;
   height: auto;
   background-color: var(--white);
@@ -132,6 +133,7 @@ span[class~="sr-only"] {
 
 
 .viewContent h4 {
+  color: var(--dark-accent);
   display: inline-flex;
   align-items: center;
   justify-content: center;
