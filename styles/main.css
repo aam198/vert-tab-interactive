@@ -50,14 +50,15 @@ span[class~="sr-only"] {
 
 /* Style the tab */
 .tab {
-  /* float: left; */
-  border: 1px solid #ccc;
+  /* TODO: bring border back in? */
+  /* border: 1px solid #ccc; */
   background-color: #f0f4f9;
   color: var(--dark-accent);
   width: 25%;
   min-width: 12rem;
   /* height: 325px; */
   height: auto;
+  border-radius: 0.5rem;
 }
 
 /* Style the buttons inside the tab */
@@ -122,6 +123,10 @@ span[class~="sr-only"] {
 .tabcontent > .viewContent {
   display: flex;
   gap: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   /* justify-content: center; */
 }
 
