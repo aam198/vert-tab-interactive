@@ -23,7 +23,7 @@ body {
 }
 
 
-.wrapper-container{
+.wfed-container{
   background-color: var(--light-bg);
   border-radius: 0.5rem;
   height: auto;
@@ -146,7 +146,7 @@ span[class~="sr-only"] {
 }
 
 
-.viewContent h4 {
+.viewContent 5 {
   color: var(--dark-accent);
   display: inline-flex;
   align-items: center;
