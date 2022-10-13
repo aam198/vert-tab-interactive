@@ -68,6 +68,7 @@ span[class~="sr-only"] {
   padding: 22px 16px;
   width: 100%;
   border: none;
+  height: auto;
   /* TODO: do they want bottom border */
   /* border-bottom: 1px solid var(--base-color); */
   outline: none;
@@ -131,7 +132,8 @@ span[class~="sr-only"] {
   margin-bottom: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  /* justify-content: center; */
+  align-content: center;
+  justify-content: center;
 }
 
 .viewContent > div {
