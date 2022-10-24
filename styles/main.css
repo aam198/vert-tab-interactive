@@ -32,6 +32,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
   max-width: 1400px;
   min-width: 950px;
+  padding-top: 1rem;
 }
 
 span[class~="sr-only"] {
@@ -127,8 +128,8 @@ span[class~="sr-only"] {
 
 .tabcontent > .viewContent {
   display: flex;
-  gap: 5px;
-  margin-top: 1rem;
+  gap: 7px;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -140,7 +141,7 @@ span[class~="sr-only"] {
   /* width: var(--width); */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
   /* border: 1px solid #c0c3c7; */
-  margin-left:2px;
+  
   height: auto;
   background-color: var(--white);
 }
@@ -156,11 +157,12 @@ span[class~="sr-only"] {
   margin: 0px;
   /* min-height: 6vh;
   max-height: 7.2vh; */
-  padding: 15px 10px;
+  padding: 18px 10px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 10px;
   font-weight: bold;
   font-family: 'Roboto Slab', serif;
+  font-size: 1.05em;
   letter-spacing: 0.5px
 }
 
