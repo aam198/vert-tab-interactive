@@ -146,7 +146,7 @@ span[class~="sr-only"] {
 }
 
 
-.viewContent 5 {
+.viewContent h4 {
   color: var(--dark-accent);
   display: inline-flex;
   align-items: center;
